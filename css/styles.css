@@ -1,0 +1,21 @@
+body {
+  background-color: #81D2C7;
+}
+
+
+.head {
+  background-color: #C1666B;
+  height: 100px;
+  color: #81D2C7;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card-details {
+  float: left;
+  background-color: #FCE694;
+  margin-right: 50px;
+}
+#numberentry {
+  width: 100px;
+}
