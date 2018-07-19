@@ -30,6 +30,8 @@ $(document).ready(function(){   // Js runs after page loads
     userInput.forEach(function(number) {
       $("#return").append("<li>" + number + "</li>");
     });
+    var number = parseInt($("#numberentry").val());
 
  });
 });
+ 
