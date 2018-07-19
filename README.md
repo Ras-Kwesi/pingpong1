@@ -1,5 +1,5 @@
 # Ping-Pong Project
-### This is the Friday Independent Project on the number game, Ping-Pong
+### This is the Friday Independent Project on the number game, Ping-Pong. Original file got corrupt and this is a reovery folder. All changes to code will appear in this repository.
 
 #### By Kwesi Makonnen
 

@@ -1,31 +1,35 @@
 //Business Logic
-var userInput;
+var userInput= [];
 
-function number() {
-	for (var num=0;num<number;num++ ) {
-  	if ((num%3 === 0) && (num%5===0)) {
-      $("#return").append("<li>Ping-Pong</li>");
+function pingPong(number) {
+	for (var num = 0;num <= number; num ++ ) {
+  	if (num%3===0 && num%5===0) {
+      userInput.push("ping-pong");
     }
     else if (num%3===0){
-    	$("#return").append("<li>Ping</li>")
+    	userInput.push("ping");
       }
     else if (num%5===0){
-    	$("#return").append('<li>Pong</li>')
+    	userInput.push("pong");
     }
     else {
-      $("return").append("<li>num</li>")
-    }
-  }
-}
+      userInput.push(num);
+    };
+  };
+};
 
 
 //User Interface Logic
 $(document).ready(function(){   // Js runs after page loads
-	$("#button1").submit(function(event) {  // Event listener at numberentry ID for user input
-		userInput = ($("#numberentry").val());  // Collects keyed in data by user and assigns it to variable
-    $("#return").text("");
-    number();
-    $("#numberentry").val()
-    event.numberDefault();
- })	;
+  $("#numberloged").submit(function(event) {  // Event listener at numberentry ID for user input
+    event.preventDefault();
+		var number = parseInt($("#numberentry").val());  // Collects keyed in data by user and assigns it to variable
+
+    pingPong(number); // Run number function
+
+    userInput.forEach(function(number) {
+      $("#return").append("<li>" + number + "</li>");
+    });
+
+ });
 });
