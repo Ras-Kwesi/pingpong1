@@ -8,37 +8,48 @@
     <title>PING-PONG</title>
   </head>
   <body>
-    <h1 class="head">Ping-Pong</h1>
 
-    <div class="card card-details">
-      <div class="card header">
-        <strong><em>About Ping-PONG</em></strong>
-      </div>
-      <div class="card-body">
-        <h2 class="card-title">Creator</h2>
-        <p class="card-text">Kwesi Makonnen</p>
-        <h2 class="card-title">Git Username</h2>
-        <p class="gard-text">Ras-Kwesi</p>
-      </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Name</a>
+      <a href="#">Kwesi Makonnen</a>
+      <a href="#">Git Account</a>
+      <a href="https://github.com/Ras-Kwesi">Ras-Kwesi</a>
+    </div>
+    
+    <h2 class="head">Ping-Pong</h2>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; About the Creator</span>
 
-      </div>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+    
+    
+  
 
-
-      <h4>Let's Play!</h4>
-      <p1>This are the <strong>rules</strong> of our little game:</p1>
-      <p2>Ping Pong will count up to your number from 1 with the following exceptions:</p2>
-          <ol>
-            <li>Numbers divisible by 3 change to "ping"</li>
-            <li>Numbers divisible by 5 change to "pong"</li>
-            <li>Numbers divisible by 15 change to "pingpong"</li>
-          </ol>
-<form id="numberloged">
-  <div class="form-group">
-    <label for="inputnum">Enter your number here:</label>
-    <input type="number" class="form-control" id="numberentry">
-    <button type="submit" class="btn btn-danger" id="button1">Submit</button>
+      <div class="padding-text">
+        <h4>Let's Play!</h4>
+        <p1>This are the <strong>rules</strong> of our little game:</p1>
+        <p2>Ping Pong will count up to your number from 1 with the following exceptions:</p2>
+            <ol>
+              <li>Numbers divisible by 3 change to "ping"</li>
+              <li>Numbers divisible by 5 change to "pong"</li>
+              <li>Numbers divisible by 15 change to "pingpong"</li>
+            </ol>
+  <form id="numberloged">
+    <div class="form-group">
+      <label for="inputnum">Enter your number here:</label>
+      <input type="number" class="form-control" id="numberentry">
+      <button type="submit" class="btn btn-danger" id="button1">Submit</button>
+    </div>
+  </form>
   </div>
-</form>
 
 
       <ul id="return">
