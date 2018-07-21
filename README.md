@@ -1,7 +1,7 @@
 # Ping-Pong Project
 This is the Friday Independent Project on the number game, Ping-Pong. Original file got corrupt and this is a reovery folder. All changes to code will appear in this repository.
 
-#### By Kwesi Makonnen
+#### [By Kwesi Makonnen]{https://github.com/Ras-Kwesi}
 
 ## Description
 The game operates by returning "ping" for a number divisible by 3, "pong" for a number divisible by 5 and "ping pong" for a number divisible by 3 and 5
